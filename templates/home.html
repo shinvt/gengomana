@@ -1,0 +1,16 @@
+{% extends 'base_home.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+  <div class="container pt-5" style="flex-direction: column;display: flex;justify-content: center;align-items: center;">
+    <blockquote class="blockquote">
+      <h3 class="mb-0 mt-4">Never Stop Learning</h3>
+    </blockquote>
+    <a href="{% url 'student_signup' %}" class="btn btn-primary btn-info">Sign up as Student</a>
+    <a href="{% url 'teacher_signup' %}" class="btn btn-primary btn-info">Sign up as Teacher</a>
+  <div>
+
+{% endblock %}
